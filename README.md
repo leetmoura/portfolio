@@ -57,12 +57,22 @@ Cores e fontes da marca ficam em `src/index.css` e `tailwind.config.js`.
 
 Tipografia: **Playfair Display** (títulos) · **DM Sans** (corpo) · **Cormorant Garamond** (citações).
 
-## Pendência conhecida
+## Imagens e currículo
 
-As imagens (foto de perfil, fotos de palestras) e o PDF do currículo ainda são
-carregados do CDN do Base44 (`media.base44.com`). Enquanto o app existir lá, os links
-funcionam. Para ficar 100% independente, baixe os arquivos, coloque em `public/img/`
-e troque as URLs nos componentes por caminhos locais (ex.: `/portfolio/img/hero.png`).
+Ficam em `public/` e são servidos pelo próprio site — nenhuma dependência externa.
+
+```
+public/curriculo-leticia-moura.pdf   → botão "Currículo" no topo
+public/img/hero.jpg                  → foto de perfil
+public/img/palestra1-1.jpg  ...      → carrossel de cada palestra
+```
+
+Para trocar uma imagem, substitua o arquivo mantendo o mesmo nome. Para adicionar uma
+palestra nova, coloque as fotos em `public/img/` e adicione o item no array `events`
+em `src/components/portfolio/Speaking.jsx`.
+
+Nos componentes os caminhos usam `` `${import.meta.env.BASE_URL}img/arquivo.jpg` `` —
+assim continuam funcionando se o endereço do site mudar.
 
 ## Trocar de endereço
 
