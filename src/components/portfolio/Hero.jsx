@@ -96,8 +96,10 @@ export default function Hero() {
             <div className="relative">
               <div className="w-72 h-72 md:w-[360px] md:h-[360px] rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl shadow-primary/10">
                 <img
-                  src="https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/0e879d8e8_ChatGPTImage9demaide202607_58_35.png"
+                  src={`${import.meta.env.BASE_URL}img/hero.jpg`}
                   alt="Letícia de Moura Silva - Product Manager"
+                  width="800"
+                  height="800"
                   className="w-full h-full object-cover object-top" />
                 
               </div>
