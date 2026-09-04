@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── letsproduct — design tokens ──────────────────────────────
+   Terracota #C4613A · Salmon #E8957A · Marrom #5C2E1A
+   Escuro #3A1A0E · Off-white #FBF0EB · Creme #F5E6DC
+   ─────────────────────────────────────────────────────────── */
+
+@layer base {
+  :root {
+    --background: 19 67% 95%;
+    --foreground: 16 61% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 16 61% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 16 61% 14%;
+
+    --primary: 17 54% 50%;
+    --primary-foreground: 19 67% 97%;
+
+    --secondary: 24 56% 91%;
+    --secondary-foreground: 18 56% 23%;
+
+    --muted: 24 56% 91%;
+    --muted-foreground: 20 30% 38%;
+
+    --accent: 15 71% 69%;
+    --accent-foreground: 16 61% 14%;
+
+    --destructive: 0 72% 45%;
+    --destructive-foreground: 19 67% 97%;
+
+    --border: 28 56% 84%;
+    --input: 28 56% 84%;
+    --ring: 17 54% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-playfair {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+  .font-cormorant {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
