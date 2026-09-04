@@ -12,8 +12,8 @@ const events = [
     desc: 'Meetup sobre carreiras em tecnologia, desmistificando o papel de PM para profissionais em transição.',
     link: 'https://www.linkedin.com/posts/let%C3%ADcia-moura1_produto-transiaexaetodecarreira-networking-ugcPost-7291125709660422144-urrH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACapEvwBPNNdLvgZa_pYkvf5ARBYN0m7TQA',
     photos: [
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/39918aa4a_image.png', fit: 'object-cover' },
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/639a8494e_image.png', fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra1-1.jpg`, fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra1-2.jpg`, fit: 'object-cover' },
     ],
   },
   {
@@ -22,8 +22,8 @@ const events = [
     type: 'Presencial',
     desc: 'Painel sobre Mulheres na TI para jovens alunas do projeto Conecta Elas, realizado pela JA Minas com apoio da Prefeitura de BH.',
     photos: [
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/9b8e3a728_image.png', fit: 'object-cover' },
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/ccea34ae5_651bebeb3_image.png', fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra2-1.jpg`, fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra2-2.jpg`, fit: 'object-cover' },
     ],
   },
   {
@@ -33,8 +33,8 @@ const events = [
     desc: 'Painel sobre produto orientado a resultado em um mundo híbrido de IA + negócio + execução real.',
     link: 'https://www.linkedin.com/posts/let%C3%ADcia-moura1_produto-productmanagement-ia-ugcPost-7455557276104310785-dOF7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACapEvwBPNNdLvgZa_pYkvf5ARBYN0m7TQA',
     photos: [
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/f658cf410_image.png', fit: 'object-cover' },
-      { src: 'https://media.base44.com/images/public/69c32a82b6219d6e0c28de1e/96a63781c_image.png', fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra3-1.jpg`, fit: 'object-cover' },
+      { src: `${import.meta.env.BASE_URL}img/palestra3-2.jpg`, fit: 'object-cover' },
     ],
   },
 ];

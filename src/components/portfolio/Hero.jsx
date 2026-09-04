@@ -78,7 +78,7 @@ export default function Hero() {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="gap-2 rounded-full px-8" asChild>
-                <a href="https://media.base44.com/files/public/69c32a82b6219d6e0c28de1e/75c10d35b_2026Curriculodocx.pdf" target="_blank" rel="noopener noreferrer" download>
+                <a href={`${import.meta.env.BASE_URL}curriculo-leticia-moura.pdf`} target="_blank" rel="noopener noreferrer" download>
                   <Download className="w-5 h-5" />
                   Currículo
                 </a>
