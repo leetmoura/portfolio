@@ -6,7 +6,6 @@ import {
   PaintBucket,
   Package,
   Users,
-  FileCheck,
 } from 'lucide-react';
 
 const allCases = [
@@ -78,17 +77,6 @@ const allCases = [
     metrics: [
       { value: '-88%', label: 'Redução de falhas em 1 mês' },
       { value: '30→8min', label: 'Tempo por lote (47 transf.)' },
-    ],
-  },
-  {
-    icon: FileCheck,
-    title: 'DDA — Débito Direto Autorizado',
-    tags: ['Pagamentos', 'Banking', 'Automação'],
-    problem: 'Usuários precisavam gerenciar e pagar boletos e contas de forma manual, sem uma solução integrada de débito autorizado na plataforma.',
-    solution: 'Implementação do fluxo completo de DDA, permitindo adesão, visualização e pagamento autorizado de débitos diretamente pelo app e Web Banking.',
-    metrics: [
-      { value: 'Mai/26', label: 'Lançamento' },
-      { value: '🚀', label: 'Métricas em breve' },
     ],
   },
   {
