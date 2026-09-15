@@ -2,7 +2,7 @@ import AnimatedSection from './AnimatedSection';
 import { motion } from 'framer-motion';
 import {
   CreditCard, Shield, BarChart3, Smartphone, Zap,
-  Building2, Lock, Users, Bell, FileCheck
+  Building2, Lock, Users, Bell
 } from 'lucide-react';
 
 const products = [
@@ -15,7 +15,6 @@ const products = [
   { icon: Users, name: 'Gestão de Multiusuários', desc: 'Perfis segmentados, hierarquia de aprovações e delegação por nível para clientes corporativos.' },
   { icon: Users, name: 'Backoffice & Admins', desc: 'Painéis de gestão para operadores, admins e clientes B2B' },
   { icon: Bell, name: 'Notificações & UX', desc: 'Design System, jornadas transacionais e comunicação in-app' },
-  { icon: FileCheck, name: 'DDA', desc: 'Implementação do fluxo completo de Débito Direto Autorizado para pagamento de boletos e contas' },
 ];
 
 export default function Products() {
