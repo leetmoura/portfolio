@@ -76,7 +76,7 @@ const allCases = [
     solution: 'Entregou produto completo: migração CSV→XLSX, novas categorias, filtros avançados, download de comprovantes individuais e consolidados.',
     metrics: [
       { value: '-88%', label: 'Redução de falhas em 1 mês' },
-      { value: '30→8min', label: 'Tempo por lote (47 transf.)' },
+      { value: '30→8min', label: 'Tempo por lote (+100 transf.)' },
     ],
   },
   {
