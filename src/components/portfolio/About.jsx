@@ -21,9 +21,9 @@ const highlights = [
 ];
 
 const milestones = [
-  { icon: Building2, period: '2023 — ATUAL', role: 'Product Manager', company: 'iDez Digital' },
+  { icon: Building2, period: '2024 — ATUAL', role: 'Product Manager', company: 'iDez Digital' },
   { icon: Home, period: 'ANTERIOR', role: 'Product Owner', company: 'Diaristando' },
-  { icon: TrendingUp, period: 'INÍCIO', role: 'Analista Financeiro', company: 'QuintoAndar' },
+  { icon: TrendingUp, period: 'INÍCIO', role: 'Analista de Pagamentos', company: 'QuintoAndar' },
   { icon: GraduationCap, period: 'FORMAÇÃO', role: 'Ciências Contábeis + Pós em Gestão de TI', company: 'Base acadêmica em finanças e tecnologia' },
 ];
 
@@ -43,7 +43,7 @@ export default function About() {
                 Sou a <strong className="text-foreground">Lets</strong>, Product Manager com foco em produtos financeiros digitais. Comecei minha carreira na área financeira, o que me deu uma base muito forte em números, processos e entendimento de negócio. Com o tempo, fui me aproximando da tecnologia e percebi que queria ir além da operação — queria construir soluções.
               </p>
               <p>
-                Hoje atuo na <strong className="text-foreground">Idez Digital</strong>, liderando produtos nas frentes de Conta Bancária, Crédito e Microsserviços. Gosto de conectar o que o negócio precisa com o que a tecnologia possibilita, transformando problemas complexos em soluções escaláveis.
+                Hoje atuo na <strong className="text-foreground">Idez Digital</strong>, liderando produto em três frentes (Conta Digital, Crédito e Inovação com IA) em 4 plataformas white-label (multi-tenant) para clientes B2B. Gosto de conectar o que o negócio precisa com o que a tecnologia possibilita, transformando problemas complexos em soluções escaláveis.
               </p>
               <p>
                 Me movem dados, problemas reais dos usuários e a construção de produtos que geram impacto de verdade — tanto para os usuários quanto para o negócio.
