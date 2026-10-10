@@ -2,42 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ── letsproduct — design tokens ──────────────────────────────
-   Terracota #C4613A · Salmon #E8957A · Marrom #5C2E1A
-   Escuro #3A1A0E · Off-white #FBF0EB · Creme #F5E6DC
-   ─────────────────────────────────────────────────────────── */
+/* ── letsproduct — design tokens (mesma linguagem das capas do LinkedIn) ──
+   Vinho #8C1946 · Pink #D42C93 · Rosa claro #FFD6EB
+   Papel #FFF6F2 · Chiclete #FFE3F1 · Borda #F7C9DE
+   Fundo: gradiente contínuo papel → chiclete + textura de ícones fintech
+   ───────────────────────────────────────────────────────────────────── */
 
 @layer base {
   :root {
-    --background: 19 67% 95%;
-    --foreground: 16 61% 14%;
+    --background: 18 100% 97%;
+    --foreground: 335 69% 28%;
 
     --card: 0 0% 100%;
-    --card-foreground: 16 61% 14%;
+    --card-foreground: 335 69% 28%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 16 61% 14%;
+    --popover-foreground: 335 69% 28%;
 
-    --primary: 17 54% 50%;
-    --primary-foreground: 19 67% 97%;
+    --primary: 323 66% 50%;
+    --primary-foreground: 36 100% 98%;
 
-    --secondary: 24 56% 91%;
-    --secondary-foreground: 18 56% 23%;
+    --secondary: 330 100% 95%;
+    --secondary-foreground: 337 70% 32%;
 
-    --muted: 24 56% 91%;
-    --muted-foreground: 20 30% 38%;
+    --muted: 330 100% 95%;
+    --muted-foreground: 335 36% 26%;
 
-    --accent: 15 71% 69%;
-    --accent-foreground: 16 61% 14%;
+    --accent: 330 100% 92%;
+    --accent-foreground: 337 70% 32%;
 
     --destructive: 0 72% 45%;
-    --destructive-foreground: 19 67% 97%;
+    --destructive-foreground: 36 100% 98%;
 
-    --border: 28 56% 84%;
-    --input: 28 56% 84%;
-    --ring: 17 54% 50%;
+    --border: 333 74% 88%;
+    --input: 333 74% 88%;
+    --ring: 323 66% 50%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
   }
 
   * {
@@ -50,20 +51,81 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'DM Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    @apply text-foreground antialiased;
+    font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background-color: #fff6f2;
+    background-image: linear-gradient(160deg, #fff7f2 0%, #ffedf2 50%, #ffe3ee 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  /* textura de ícones fintech, bem clara, fixa atrás de tudo */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.09;
+    background-size: 312px 156px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='312' height='156' viewBox='0 0 312 156' fill='none' stroke='%23D42C93' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg transform='translate(14 14)'%3E%3Crect x='2.5' y='5' width='19' height='14' rx='2.5'/%3E%3Cpath d='M2.5 10h19M6 15h4'/%3E%3C/g%3E%3Cg transform='translate(92 14) rotate(12 12 12)'%3E%3Crect x='3' y='3' width='7' height='7' rx='1'/%3E%3Crect x='14' y='3' width='7' height='7' rx='1'/%3E%3Crect x='3' y='14' width='7' height='7' rx='1'/%3E%3Cpath d='M14 14h3v3h-3zM20 20h-3'/%3E%3C/g%3E%3Cg transform='translate(170 14)'%3E%3Cpath d='M3 10 12 4l9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18'/%3E%3C/g%3E%3Cg transform='translate(248 14) rotate(-12 12 12)'%3E%3Cpath d='M13 2 4 14h7l-1 8 9-12h-7Z'/%3E%3C/g%3E%3Cg transform='translate(53 92) rotate(-12 12 12)'%3E%3Cpath d='M12 3 4.5 6v6c0 4.5 3.2 7.6 7.5 9 4.3-1.4 7.5-4.5 7.5-9V6Z'/%3E%3Cpath d='m9 12 2 2 4-4'/%3E%3C/g%3E%3Cg transform='translate(131 92)'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpath d='M14.5 9c0-1-1.1-1.8-2.5-1.8S9.5 8 9.5 9.2s1.1 1.6 2.5 1.9 2.5.8 2.5 2-1.1 1.9-2.5 1.9-2.5-.8-2.5-1.8M12 6v1.2M12 16.8V18'/%3E%3C/g%3E%3Cg transform='translate(209 92) rotate(12 12 12)'%3E%3Cpath d='m3 17 6-6 4 4 8-8M15 7h6v6'/%3E%3C/g%3E%3Cg transform='translate(287 92)'%3E%3Crect x='6.5' y='2.5' width='11' height='19' rx='2.5'/%3E%3Cpath d='M11 18.5h2'/%3E%3C/g%3E%3C/svg%3E");
   }
 
   ::selection {
     @apply bg-primary/20 text-foreground;
   }
+
+  /* títulos em Fraunces, peso de pôster */
+  h1.font-playfair,
+  h2.font-playfair {
+    font-weight: 900 !important;
+    letter-spacing: -0.02em;
+    font-optical-sizing: auto;
+  }
+
+  /* a palavra de destaque dos títulos vira a "virada" em Pacifico */
+  h2.font-playfair > .text-primary {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+    display: inline-block;
+    transform: rotate(-3deg);
+    padding: 0 0.1em;
+  }
+
+  /* rótulos de seção em DM Mono */
+  span.uppercase.tracking-widest,
+  h3.uppercase.tracking-widest {
+    font-family: 'DM Mono', ui-monospace, monospace;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+  }
 }
 
 @layer utilities {
   .font-playfair {
-    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
   }
   .font-cormorant {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Fraunces', Georgia, serif;
   }
+  .font-pacifico {
+    font-family: 'Pacifico', cursive;
+  }
+  .glass {
+    background-color: rgb(255 255 255 / 0.6);
+    border-color: rgb(255 255 255 / 0.9);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 16px 40px -12px rgb(140 25 70 / 0.12);
+  }
+}
+
+/* cards em vidro fosco, como nas capas */
+.bg-card {
+  background-color: rgb(255 255 255 / 0.62) !important;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 16px 40px -16px rgb(140 25 70 / 0.12);
 }
