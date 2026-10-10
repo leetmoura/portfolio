@@ -5,9 +5,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        playfair: ['Playfair Display', 'Georgia', 'serif'],
-        cormorant: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['Bricolage Grotesque', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        playfair: ['Fraunces', 'Georgia', 'serif'],
+        pacifico: ['Pacifico', 'cursive'],
+        mono: ['DM Mono', 'ui-monospace', 'monospace'],
+        cormorant: ['Fraunces', 'Georgia', 'serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
