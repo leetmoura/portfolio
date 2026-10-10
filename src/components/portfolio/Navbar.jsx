@@ -34,8 +34,11 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <a href="#" className="font-playfair text-xl font-semibold text-foreground">
-            lets<span className="text-primary">product</span>
+          <a href="#" className="flex items-center gap-2 text-lg font-extrabold text-foreground">
+            <span className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#FD3DB5] to-[#FB6A2C] flex items-center justify-center" aria-hidden="true">
+              <svg width="12" height="15" viewBox="0 0 18 22"><path d="M11 0 L1 13 H8 L6 22 L17 8 H10 Z" fill="#FFFBF5" /></svg>
+            </span>
+            letsproduct
           </a>
           <div className="hidden md:flex items-center gap-8">
             {links.map((link) => (

@@ -6,8 +6,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center px-6 pt-20 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 right-0 w-[500px] h-[500px] rounded-full bg-primary/5 blur-3xl" />
-        <div className="absolute bottom-20 left-0 w-[400px] h-[400px] rounded-full bg-accent/5 blur-3xl" />
+
       </div>
 
       <div className="max-w-6xl mx-auto w-full relative z-10">
@@ -39,7 +38,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground">
               
-              Letícia <span className="text-primary italic">Moura.</span>
+              Letícia{' '}
+              <span className="font-pacifico font-normal text-primary inline-block -rotate-3 text-[0.82em] align-baseline">Moura.</span>
             </motion.h1>
 
             <motion.p

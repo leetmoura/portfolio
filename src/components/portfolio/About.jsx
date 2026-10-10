@@ -24,7 +24,6 @@ const milestones = [
   { icon: Building2, period: '2024 — ATUAL', role: 'Product Manager', company: 'iDez Digital' },
   { icon: Home, period: 'ANTERIOR', role: 'Product Owner', company: 'Diaristando' },
   { icon: TrendingUp, period: 'INÍCIO', role: 'Analista de Pagamentos', company: 'QuintoAndar' },
-  { icon: GraduationCap, period: 'FORMAÇÃO', role: 'Ciências Contábeis + Pós em Gestão de TI', company: 'Base acadêmica em finanças e tecnologia' },
 ];
 
 export default function About() {
@@ -77,6 +76,19 @@ export default function About() {
                     </div>
                   </motion.div>
                 ))}
+              </div>
+            </div>
+
+            <div className="mt-6 pt-5 border-t border-border">
+              <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">Formação</h3>
+              <div className="flex gap-4 items-start pl-4">
+                <div className="shrink-0 w-8 h-8 rounded-full bg-background border-2 border-primary/30 flex items-center justify-center">
+                  <GraduationCap className="w-3.5 h-3.5 text-primary" />
+                </div>
+                <div className="pt-0.5">
+                  <p className="text-sm font-semibold text-foreground leading-tight">Ciências Contábeis + Pós em Gestão de TI</p>
+                  <p className="text-xs text-muted-foreground">Base acadêmica em finanças e tecnologia</p>
+                </div>
               </div>
             </div>
           </div>

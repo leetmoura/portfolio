@@ -40,7 +40,7 @@ export default function CaseCard({ caseData, index }) {
 
         <div className="space-y-3">
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wider text-accent">Problema</span>
+            <span className="text-xs font-semibold uppercase tracking-wider text-[#B8461A]">Problema</span>
             <p className="text-sm text-muted-foreground mt-1">{caseData.problem}</p>
           </div>
           <div>
