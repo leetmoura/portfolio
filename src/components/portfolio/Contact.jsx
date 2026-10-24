@@ -21,8 +21,8 @@ const contactItems = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    desc: 'letícia-moura1',
-    href: 'https://linkedin.com/in/letícia-moura1',
+    desc: 'leticia-moura-produto',
+    href: 'https://www.linkedin.com/in/leticia-moura-produto/',
     primary: false,
   },
 ];
